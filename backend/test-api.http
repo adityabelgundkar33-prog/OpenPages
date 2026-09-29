@@ -1,0 +1,28 @@
+### Get all blogs
+GET http://localhost:5001/api/blogs
+
+### Create a blog
+POST http://localhost:5001/api/blogs
+Content-Type: application/json
+
+{
+  "title": "My First Blog",
+  "author": "Aditya",
+  "content": "This is my first blog created using React, Node.js, Express, Sequelize and MySQL."
+}
+
+### Get blog by ID
+GET http://localhost:5001/api/blogs/1
+
+### Update blog
+PUT http://localhost:5001/api/blogs/1
+Content-Type: application/json
+
+{
+  "title": "My Updated Blog",
+  "author": "Aditya",
+  "content": "This is the updated content of my blog."
+}
+
+### Delete blog
+DELETE http://localhost:5001/api/blogs/1
